@@ -1,4 +1,4 @@
-package spr7aop;
+package aop1;
 
 public interface HelloInter {
 	void hello();

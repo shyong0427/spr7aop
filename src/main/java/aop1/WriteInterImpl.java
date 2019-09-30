@@ -1,4 +1,4 @@
-package spr7aop;
+package aop1;
 
 public class WriteInterImpl implements WriteInter{
 	public WriteInterImpl() {

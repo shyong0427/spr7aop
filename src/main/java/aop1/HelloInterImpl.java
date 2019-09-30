@@ -1,4 +1,4 @@
-package spr7aop;
+package aop1;
 
 public class HelloInterImpl implements HelloInter {
 	public HelloInterImpl() {

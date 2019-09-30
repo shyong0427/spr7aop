@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!-- Business Login 수행처리 -->
-	<bean id="writeInterImpl" class="spr7aop.WriteInterImpl" />
-	<bean id="helloInterImpl" class="spr7aop.HelloInterImpl" />
+	<!-- Business Login [여기서는 객체 생성] 수행처리 -->
+	<bean id="writeInterImpl" class="aop1.WriteInterImpl" />
+	<bean id="helloInterImpl" class="aop1.HelloInterImpl" />
 </beans>
