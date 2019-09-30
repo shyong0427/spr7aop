@@ -18,4 +18,12 @@
 			<aop:around method="logging" pointcut-ref="p1"/>
 		</aop:aspect>
 	</aop:config>
+	
+	<aop:config>
+<!-- 	<aop:pointcut expression="execution(public void hello(..)) || execution(public void process(..))" id="p2"/>  -->
+		<aop:pointcut expression="execution(* *..*HelloInter*.*(..))" id="p2"/> <!-- HelloInter의 interface에 있는 추상메소드는 모두 수행 -->
+		<aop:aspect ref="loggingAspect">
+			<aop:around method="logging" pointcut-ref="p2"/>
+		</aop:aspect>
+	</aop:config>
 </beans>

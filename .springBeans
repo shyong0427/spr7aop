@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/init_bean.xml</config>
 		<config>src/main/resources/init_aop.xml</config>
+		<config>src/main/resources/init_bean2.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
