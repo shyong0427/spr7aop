@@ -1,15 +1,15 @@
 package aop3;
 
-public class LogicImpl implements LogicInter {
-	private ArticleInter articleInter;
-	
-	public LogicImpl() {
-	}
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-	public LogicImpl(ArticleInter articleInter) {
-		this.articleInter = articleInter;
-	}
-	
+@Service("jhe")
+public class LogicImpl implements LogicInter {
+	@Autowired
+	@Qualifier("articleDao")
+	private ArticleInter articleInter;
+
 	public void selectdataProcess() { // 오버라이딩
 		System.out.println("selectdataProcess 수행 시작");
 		
